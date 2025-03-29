@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "apps/givi-main/package.json",
+      "src": "apps/givi-main/next.config.js",
       "use": "@vercel/next"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "apps/givi-main/$1"
+      "dest": "/$1"
     }
   ]
 }
