@@ -11,10 +11,10 @@ import {
 import { CiMapPin } from "react-icons/ci";
 import TypingEffect from "./components/typer";
 
-const majorMono = Major_Mono_Display({
-  weight: "400",
-  subsets: ["latin"],
-});
+// const majorMono = Major_Mono_Display({
+//   weight: "400",
+//   subsets: ["latin"],
+// });
 
 const JetBrainsMono = JetBrains_Mono({
   weight: "400",
