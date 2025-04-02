@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "apps/givi-main/next.config.js",
+      "src": "apps/givi-main/package.json",
       "use": "@vercel/next"
     }
   ],
