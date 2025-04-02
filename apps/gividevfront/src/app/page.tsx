@@ -1,4 +1,4 @@
-import { Major_Mono_Display, JetBrains_Mono } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import Image from "next/image";
 import {
   DiJsBadge,
