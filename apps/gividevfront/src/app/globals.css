@@ -1,0 +1,127 @@
+/* @import "tailwindcss";
+
+:root {
+  --background-black: #0D0D0D;
+  --background-grey: #262626;
+  --font-white: #F2F2F2;
+  --font-red: #BF2C47;
+}
+
+* {
+  @apply font-mono;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input, button, textarea, select {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+@font-face {
+  font-family: 'Thames Serial';
+  src: url('/fonts/Thames-Serial-Bold.woff2') format('woff2'),
+       url('/fonts/Thames-Serial-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.thames-font {
+  font-family: 'Thames Serial', sans-serif;
+}
+ */
+
+/* @theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+@import "tailwindcss";
+
+:root {
+  --background-black: #0D0D0D;
+  --background-grey: #262626;
+  --font-white: #F2F2F2;
+  --font-red: #BF2C47;
+}
+
+html {
+  font-size: 1rem; /* Mantém a base, mas permite Tailwind sobrescrever */
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-mono bg-[var(--background-black)] text-[var(--font-white)] leading-relaxed min-h-screen;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  @apply cursor-pointer inline-flex items-center justify-center;
+}
+
+/* Melhor acessibilidade para navegação por teclado */
+:focus-visible {
+  @apply outline outline-2 outline-[var(--font-red)] outline-offset-2;
+}
+
+/* Garantir que imagens sejam responsivas */
+img {
+  @apply max-w-full h-auto;
+}
+
+/* Definir fonte Thames Serial */
+@font-face {
+  font-family: 'Thames Serial';
+  src: url('/fonts/Thames-Serial-Bold.woff2') format('woff2'),
+       url('/fonts/Thames-Serial-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.thames-font {
+  font-family: 'Thames Serial', sans-serif;
+}
+
+/* Modo escuro opcional */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
