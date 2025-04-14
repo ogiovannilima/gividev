@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Givi Dev",
-  description: "Where is my mind ?",
+  title: "Giovanni - Givi Dev",
+  description: "Giovanni's Portfolio",
   openGraph: {
-    title: "Givi Dev",
-    description: "Where is my mind ?",
+    title: "Giovanni - Givi Dev",
+    description: "Giovanni's Portfolio",
     images: [
       {
         url: "/profile1.png",
