@@ -8,6 +8,8 @@ import {
   DiDatabase,
   DiCode,
 } from "react-icons/di";
+import { AiFillMail, AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
+import { SiDevdotto } from "react-icons/si";
 // import { CiMapPin } from "react-icons/ci";
 import TypingEffect from "./components/typerText/typer";
 import { FadeText } from "./components/fadeText";
@@ -95,12 +97,72 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex items-center gap-4 mt-6 cursor-pointer">
-        <DiCode className="w-36 h-36 text-(--font-white) bg-(--font-red) shrink-0" />
-        <div className={`flex flex-col gap-6`}>
-          <p className="font-bold">My Work</p>
-          <p>Whats&apos;s new ?</p>
-          <FadeText />
+      <div className="flex flex-col gap-8 sm:flex-row sm:justify-between">
+        <div className="flex items-center gap-4 mt-6 cursor-pointer">
+          <DiCode className="w-36 h-36 text-(--font-white) bg-(--font-red) shrink-0" />
+          <div className="flex flex-col gap-6">
+            <p className="font-bold">My Work</p>
+            <p>Whats&apos;s new ?</p>
+            <FadeText />
+          </div>
+        </div>
+
+        <div className="flex items-center justify-between sm:flex-col sm:justify-normal sm:gap-2">
+          <div className="flex items-center sm:border-b-1">
+            <span className="-rotate-90 text-[50px] font-bold tracking-[-4px]">
+              GET
+            </span>
+            <div className="flex flex-col items-start">
+              <span className="flex">in</span>
+              <span className="text-[50px] font-bold tracking-[-4px] text-(--font-red)">
+                TOUCH
+              </span>
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="flex items-center flex-col gap-2 sm:flex-row">
+              <span className="w-[32px] h-[32px]">
+                <a
+                  className="cursor-pointer"
+                  href="https://www.linkedin.com/in/giovannilimaa/"
+                  target="_blank"
+                >
+                  <AiFillLinkedin className="w-full h-full" />
+                </a>
+              </span>
+              <span className="w-[32px] h-[32px]">
+                <a
+                  className="cursor-pointer"
+                  href="mailto:ogiovannilima@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillMail className="w-full h-full" />
+                </a>
+              </span>
+            </div>
+            <div className="flex items-center flex-col gap-2 sm:flex-row">
+              <span className="w-[32px] h-[32px]">
+                <a
+                  className="cursor-pointer"
+                  href="https://github.com/ogiovannilima"
+                  target="_blank"
+                >
+                  <AiOutlineGithub className="w-full h-full" />
+                </a>
+              </span>
+
+              <span className="w-[32px] h-[32px]">
+                <a
+                  className="cursor-pointer"
+                  href="https://dev.to/giva"
+                  target="_blank"
+                >
+                  <SiDevdotto className="w-full h-full" />
+                </a>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
